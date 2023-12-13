@@ -1,0 +1,29 @@
+.products-container{
+    margin-top: 10px;
+    max-width: 960px;
+    width: 80vw;
+    background-color: var(--bg-secondary-color);
+    height: 408px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.product {
+    max-width: 920px;
+    height: 53px;
+    border: 1px solid var(--bg-primary-color);
+    border-radius: 5px;
+    padding: 5px 0px 0px 5px;
+}
+
+.product-name{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--font-secondary-color);
+}
+
+.product-price {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--bg-primary-color);
+}

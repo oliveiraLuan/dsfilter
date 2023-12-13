@@ -1,0 +1,43 @@
+.filter-container{
+    max-height: 200px;
+    height: 25vh;
+    background-color: var(--bg-secondary-color);
+    width: 80vw;
+    max-width: 960px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.filter-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-container input {
+    margin-top: 5px;
+    width: 200px;
+    height: 40px;
+    background-color: var(--bg-secondary-color);
+    border: 1px solid var(--bg-tertiary-color);
+    border-radius: 5px;
+}
+
+.filter-container input::placeholder{
+    color: var(--bg-tertiary-color);
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+
+.filter-container button {
+    margin-top: 5px;
+    width: 200px;
+    height: 40px;
+    background-color: var(--bg-primary-color);
+    border-radius: 5px;
+    border-style: none;
+    color: var(--font-primary-color);
+    font-weight: 700;
+    font-size: 16px;
+}
