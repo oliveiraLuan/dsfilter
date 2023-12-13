@@ -1,4 +1,5 @@
 import './App.css'
+import ListingBody from './components/ListingBody';
 import Header from './components/header';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
   <>
     <Header/>
+    <ListingBody/>
   </>);
 
 }
