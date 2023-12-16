@@ -9,8 +9,6 @@ export default function Filter({minValue, maxValue} : Props){
 
     function handleClickFilter(event : any){
         event.preventDefault();
-        console.log(minValue);
-        console.log(maxValue);
     }
 
     function handleOnChangeMinValue(event : any){

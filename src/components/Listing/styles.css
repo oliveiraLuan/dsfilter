@@ -6,6 +6,8 @@
     height: 408px;
     border-radius: 5px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .product {
@@ -14,6 +16,7 @@
     border: 1px solid var(--bg-primary-color);
     border-radius: 5px;
     padding: 5px 0px 0px 5px;
+    margin-top: 10px;
 }
 
 .product-name{
