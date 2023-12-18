@@ -1,29 +1,33 @@
+import { useState } from 'react';
 import './styles.css';
 
-export type Props = {
-    minValue : number,
-    maxValue : number
+type Props = {
+    onFilter : Function;
 }
 
-export default function Filter({minValue, maxValue} : Props){
+export default function Filter({onFilter} : Props){
+
+    const[minValue, setMinValue] = useState<number>();
+    const[maxValue, setMaxValue] = useState<number>();
 
     function handleClickFilter(event : any){
-        event.preventDefault();
+        event.preventDefault(); 
+        onFilter(minValue, maxValue);
     }
 
     function handleOnChangeMinValue(event : any){
-        minValue = event.target.value;
+        setMinValue(event.target.value);
     }
 
     function handleOnChangeMaxValue(event : any){
-        maxValue = event.target.value;
+        setMaxValue(event.target.value);
     }
 
     return (
     <div className="filter-container">
         <form action="submit">
             <input 
-            value={maxValue}
+            value={minValue}
             type="text" 
             name="minValue" 
             id="minValue" 
@@ -31,7 +35,7 @@ export default function Filter({minValue, maxValue} : Props){
             onChange={handleOnChangeMinValue}
             />
             <input 
-            value={minValue}
+            value={maxValue}
             type="text" 
             name="maxValue" 
             id="maxValue" 

@@ -1,13 +1,18 @@
 import "./styles.css";
-import * as productService from "../../services/product-service";
+import { ProductDTO } from "../../models/ProductDTO";
 
-export default function Listing() {
+export type Props = {
+  products: ProductDTO[]
+}
+
+export default function Listing({products} : Props) {
+
   return (
     <>
       <section>
         <div className="products-container">
             {
-              productService.findByPrice(1500, 2000).map((product) => (
+              products.map((product) => (
                   <div key={product.id} className="product">
                       <p className="product-name">{product.name}</p>
                       <p className="product-price">{product.price}</p>
