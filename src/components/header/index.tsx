@@ -1,11 +1,16 @@
+import { useContext } from 'react';
 import './styles.css';
+import { ContextCountProducts} from '../../context-products';
 
 export default function Header(){
+
+    const {contextProductsCount} = useContext(ContextCountProducts);
+
     return (
     <>
         <header>
             <h1>DSFilter</h1>
-            <p>6 produtos</p>
+            <p>{contextProductsCount} produto(s)</p>
         </header>
     </>);
 }
