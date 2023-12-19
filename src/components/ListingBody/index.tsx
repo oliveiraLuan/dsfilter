@@ -4,7 +4,7 @@ import Listing from "../Listing";
 import "./styles.css";
 import * as productService from "../../services/product-service";
 import { ProductDTO } from "../../models/ProductDTO";
-import { ContextCountProducts } from "../../context-products";
+import { ContextCountProducts } from "../../utils/context-products";
 
 export default function ListingBody() {
   const [products, setProducts] = useState<ProductDTO[]>([]);

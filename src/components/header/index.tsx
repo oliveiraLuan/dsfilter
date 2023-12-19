@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import './styles.css';
-import { ContextCountProducts} from '../../context-products';
+import { ContextCountProducts} from '../../utils/context-products';
 
 export default function Header(){
 
